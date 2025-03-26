@@ -1,0 +1,405 @@
+body {
+    font-family: Arial, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    padding-top: 90px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    width: 100%;
+    max-width: 1440px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    box-shadow: none;
+}
+
+.gambar-logo {
+    width: 200px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    gap: 36px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: #336913;
+}
+
+.btn-plant-mangrove {
+    background: white;
+    color: #336913;
+    border: 1px solid #dddddd;
+    padding: 12px 24px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-plant-mangrove:hover {
+    background: #336913;
+    color: white;
+}
+
+button, .btn-green, .btn-outline-green, .btn-outline-gray, .small-btn {
+    border-radius: 50px;
+}
+
+.btn-green {
+    background-color: #336913;
+    color: white;
+    padding: 10px 20px;
+    border: 1px;
+    cursor: pointer;
+    border-radius: 9000px;
+}
+
+.btn-outline-green,
+.btn-outline-gray {
+    background: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.small-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.btn-most-donation {
+    border: 1px solid #2d9444;
+    color: #2d9444;
+}
+
+.btn-most-recent {
+    border: 1px solid #dddddd;
+    color: #dddddd;
+}
+
+.btn-most-donation:hover,
+.btn-most-recent:hover {
+    border-color: #2d9444;
+    color: #2d9444;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    align-items: flex-start;
+    position: relative;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    right: 52%;
+    top: 0;
+    bottom: 20%;
+    width: 1px;
+    background-color: #eeeeee;
+    transform: translateX(-50%);
+}
+
+.progress-section,
+.leaderboard-section {
+    width: 75%;
+    padding: 20px;
+}
+
+.hero-text {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.progress-box {
+    background: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.progress-container {
+    width: 100%;
+    background: rgba(76, 175, 80, 0.2);
+    border-radius: 50px;
+    height: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 100%;
+}
+
+.filled {
+    height: 90%;
+    width: 56.9%;
+    background: #336913;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+.foto-pohon {
+    max-width: 40px;
+}
+
+.mangrove-image {
+    display: block;
+    width: 729px;
+    height: 249px;
+    margin: 20px auto 0;
+    position: absolute;
+    left: 0;
+}
+
+.highlight-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #336913;
+}
+
+.title-leaderboard {
+    font-size: 40px;
+}
+
+.leaderboard-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 627px;
+    height: 60px;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.leaderboard-item:last-child {
+    border-bottom: none;
+}
+
+.leaderboard-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rank-circle {
+    width: 48px;
+    height: 48px;
+    background: #336913;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.medal {
+    width: 60px;
+    height: auto;
+}
+
+.leaderboard-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.nickname {
+    font-size: 12px;
+    font-weight: bold;
+    color: #777;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tree-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    right: 15px;
+}
+
+.tree-icon {
+    width: 30px;
+    height: auto;
+}
+
+.tree-count {
+    font-size: 22.5px;
+    font-weight: bold;
+    color: #336913;
+}
+
+.tree-countt {
+    font-size: 12px;
+    font-weight: bold;
+    color: #336913;
+}
+
+.leaderboard-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.our-sponsor {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.sponsor-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    flex-wrap: wrap;
+    margin-top: -1.1%;
+    background-color: #f5f8fa;
+    padding: 40px;
+}
+
+.sponsor-container img {
+    max-width: 150px;
+    height: auto;
+}
+
+.hero-text-abt {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.about-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+.logo-about {
+    max-width: 120px;
+}
+
+.logo-aboutt {
+    max-width: 106px;
+}
+
+.transformation-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+.transformation-box {
+    text-align: center;
+    width: 620px;
+    height: 401px;
+}
+
+.transformation-box img {
+    width: 100%;
+    height: 344px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.transformation-box img:hover {
+    transform: scale(1.1);
+}
+
+.middle-box {
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.middle-box img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+    margin-bottom: 120px;
+}
+
+.middle-box p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2d9444;
+    margin: -130px 0 0 0;
+}
+
+.transformation-box p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #000;
+}

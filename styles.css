@@ -403,3 +403,14 @@ button, .btn-green, .btn-outline-green, .btn-outline-gray, .small-btn {
     margin-top: 10px;
     color: #000;
 }
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1D4009;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+}
